@@ -8,6 +8,8 @@
     <title>Formulario</title>
     <script src="https://kit.fontawesome.com/4bc23db062.js" crossorigin="anonymous"></script>
     <link rel="stylesheet" href="./css/index.css">
+    <link rel="stylesheet" href="./components/Header/header.css">
+    <link rel="stylesheet" href="./components/Footer/footer.css">
 </head>
 
 <body>
@@ -29,64 +31,95 @@
         </ul>
     </nav>
 
-    <div class="contenido">
-        <div class="formulario">
-            <form action="">
-                <h1>Añade tu super</h1>
-                <p>Agrega tu personaje favorito completando las opciones.</p>
-
-
-                <div class="line">
-                    <div class="inputs">
-                        <label for="">Nombre</label>
-                        <input type="text" name="" id="">
-                    </div>
-
-                    <div class="inputs">
-                        <label for="">Especie</label>
-                        <input type="text" name="" id="">
-                    </div>
-
-                    <div class="inputs">
-                        <label for="">Fecha</label>
-                        <input type="date" name="" id="">
-                    </div>
-
-                    <div class="inputs">
-                        <label for="">Agregar Foto</label>
-                        <input type="file" name="" id="">
-                    </div>
+    <main>
+        <div class="container-cards">
+            <div class="card">
+                <div class="fondo">
+                    <img src="./img/corazon.png" alt="" class="corazon">
                 </div>
 
-                <div class="line">
-                    <div class="inputs">
-                        <textarea name="" id="" cols="30" rows="10" placeholder="Descripción"></textarea>
-                    </div>
-
-                    <div class="inputs">
-                        <label for="">Poderes</label>
-                        <div class="check">
-                            <input type="checkbox" name="" id=""> Volar
-                            <input type="checkbox" name="" id=""> Superinteligencia
-                            <input type="checkbox" name="" id=""> Vista de rayo láser
-                            <input type="checkbox" name="" id=""> Billetera gorda
-                        </div>
-                    </div>
-                    <div class="inputs">
-                        <label for="Tipo de personaje"></label>
-                        <div class="check">
-                            <input type="radio" name="" id=""> Héroe / Heroina
-                            <input type="radio" name="" id=""> Villano / Villana
-                        </div>
-                    </div>
+                <div class="perfil">
+                    <img src="./img/batman.png" alt="">
                 </div>
 
-                <button type="submit">Añadir</button>
+                <div class="content">
+                    <h1>BATMAN</h1>
 
+                    <p>Bruce Wayne es el único personaje que se identifica como Batman y aparece en Batman, Detective
+                        Comics, Batman y Robin, y Batman: The Dark Knight. Dick Grayson vuelve al manto de Nightwing.
+                    </p>
+                </div>
 
-            </form>
+                <button>Ver mas</button>
+            </div>
+
+            <div class="card">
+                <div class="fondo fondo-quinn">
+                    <img src="./img/corazon.png" alt="" class="corazon">
+                </div>
+
+                <div class="perfil">
+                    <img src="./img/harley.png" alt="">
+                </div>
+
+                <div class="content quinn">
+                    <h1>Harley Quinn</h1>
+
+                    <p>La creación de Harley Quinn fue una idea de último minuto propuesta por el escritor
+                        estadounidense Paul Dini para modificar una escena del vigésimo-segundo episodio de Batman: la
+                        serie animada.</p>
+                </div>
+
+                <button>Ver mas</button>
+            </div>
+
+            <div class="card">
+                <div class="fondo">
+                    <img src="./img/corazon.png" alt="" class="corazon">
+                </div>
+
+                <div class="perfil">
+                    <img src="./img/batman.png" alt="">
+                </div>
+
+                <div class="content">
+                    <h1>BATMAN</h1>
+
+                    <p>Bruce Wayne es el único personaje que se identifica como Batman y aparece en Batman, Detective
+                        Comics, Batman y Robin, y Batman: The Dark Knight. Dick Grayson vuelve al manto de Nightwing.
+                    </p>
+                </div>
+
+                <button>Ver mas</button>
+            </div>
+ 
+            <!-- <div class="card">
+                <div class="fondo">
+                    <img src="./img/corazon.png" alt="" class="corazon">
+                </div>
+
+                <div class="perfil">
+                    <img src="./img/batman.png" alt="">
+                </div>
+
+                <div class="content">
+                    <h1>BATMAN</h1>
+
+                    <p>Bruce Wayne es el único personaje que se identifica como Batman y aparece en Batman, Detective
+                        Comics, Batman y Robin, y Batman: The Dark Knight. Dick Grayson vuelve al manto de Nightwing.
+                    </p>
+                </div>
+
+                <button>Ver mas</button>
+            </div> -->
+
+            <button class="add"><a href="./pages/add.html"><i class="fa-solid fa-plus"></i></a></button>
         </div>
-    </div>
+    </main>
+
+    <footer>
+        <h1>Todos los derechos reservados a FRONT END 1</h1>
+    </footer>
 </body>
 
 </html>

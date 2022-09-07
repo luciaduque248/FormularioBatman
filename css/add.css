@@ -1,0 +1,226 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap');
+
+*{
+    margin: 0;
+    box-sizing: border-box;
+    font-family: 'Inter', sans-serif;
+}
+
+.formulario form h1{
+    margin-bottom: 1rem;
+}
+
+.contenido{
+    padding: 2rem 2rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.formulario{
+    width: 60vw;
+    background-color:#00669F;
+    color: white;
+    padding: 3rem 2rem;
+    border-radius: 50px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+}
+
+.line{
+    /* background-color: aqua; */
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    width: 55vw;
+    margin: 0 0 10px 0;
+}
+
+
+.inputs{
+    /* background-color: red; */
+    text-align: left;
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    width: 25vw;
+    margin: 5px 0;
+}
+
+.check{
+    display: flex;
+    flex-direction: column;
+}
+
+.inputs label{
+    margin: 20px 0;
+    font-weight: 100;
+}
+
+
+.inputs input, .inputs select{
+    padding: 0 1rem;
+    border-radius: 15px;
+    height: 40px;
+    border: none;
+}
+
+.inputs textarea{
+    padding: 1rem 1rem;
+    border-radius: 15px;
+    border: none;
+}
+
+.check label{
+    margin: 5px 0;
+}
+
+.check input{
+    padding: 0 0;
+    margin: 0 1rem;
+    border-radius: 15px;
+    height: auto;
+    border: none;
+}
+
+.formulario form button{
+    background-color:  #1CD1B0;
+    border: none;
+    font-weight: bolder;
+    width: 30vw;
+    padding: 1rem 2rem;
+    margin: 2rem 0 0 0;
+    font-size: 30px;
+    border-radius: 23.011px;
+}
+
+.formulario form button:hover{
+    background-color: #001D2D;
+    color: white;
+    animation: shadow-drop-2-center 0.4s cubic-bezier(0.250, 0.460, 0.450, 0.940) both;
+}
+
+.inputs .file{
+    width: auto;
+    padding: 0.5rem 1rem;
+}
+
+
+@keyframes shadow-drop-2-center {
+    0% {
+      transform: translateZ(0);
+      box-shadow: 0 0 0 0 rgba(0, 0, 0, 0);
+    }
+    100% {
+      transform: translateZ(50px);
+      box-shadow: 0 0 20px 10px rgba(0, 0, 0, 0.35);
+    }
+}
+
+@media only screen and (min-device-width : 320px) and (max-device-width : 480px) {
+    .formulario{
+        width: auto;
+        padding: 3rem 1rem;
+    }
+    .line{
+        width: auto;
+    }
+    
+    .inputs{
+        width: 70vw;
+    }
+
+    .inputs textarea{
+        width: 70vw;
+    }
+
+    .formulario form button{
+        width: auto;
+    }
+
+    .inputs .file{
+        width: 70vw;
+        border: 1px solid white;
+    }
+
+}
+
+@media (min-width: 481px) and (max-width: 599px) {
+    .formulario{
+        width: auto;
+        padding: 3rem 1rem;
+    }
+    .line{
+        width: auto;
+    }
+    
+    .inputs{
+        width: 70vw;
+    }
+
+    .inputs textarea{
+        width: 70vw;
+    }
+
+    .formulario form button{
+        width: auto;
+    }
+
+    .inputs .file{
+        width: 70vw;
+        border: 1px solid white;
+    }
+}
+
+@media (min-width: 600px) and (max-width: 767px) {
+    .formulario{
+        width: auto;
+        padding: 3rem 1rem;
+    }
+
+    .line{
+        /* background-color: red; */
+        width: auto;
+        justify-content: space-between;
+    }
+    
+    .inputs{
+        /* background-color: aqua; */
+        width: 40vw;
+    }
+
+    .inputs .file{
+        width: 40vw;
+        border: 1px solid white;
+    }
+}
+
+@media only screen and (min-device-width : 768px) and (max-device-width : 1024px) {
+    .formulario{
+        width: auto;
+        padding: 3rem 1rem;
+    }
+
+    .line{
+        /* background-color: red; */
+        width: auto;
+        justify-content: space-around;
+    }
+    
+    .inputs{
+        /* background-color: aqua; */
+        width: 40vw;
+    }
+
+    .inputs .file{
+        width: 40vw;
+        border: 1px solid white;
+    }
+}
+
+
+
+

@@ -1,73 +1,208 @@
-@import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@100;200;300;400;500;600;700;800;900&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,300;1,400;1,500;1,700;1,900&display=swap');
 
-*{
+* {
     margin: 0;
     box-sizing: border-box;
     font-family: 'Roboto', sans-serif;
 }
 
-.alerta{
-    background-color: #1CD1B0;
-    
+a{
+    color: inherit;
 }
 
-header{
+main {
+    /* background-color: red; */
+    background-color: transparent;
+    padding: 0 2rem;
+    padding-top: 15rem;
+    padding-bottom: 15rem;
+}
+
+.container-cards {
     display: flex;
-    justify-content: flex-start;
+    justify-content: space-around;
     align-items: center;
-    background-color: #00669F;
-    color: white;
+    
+    flex-wrap: wrap;
 }
 
-header h1{
-    font-weight: normal;
+.card {
+    background-color: #F3F3F3;
+    display: flex;
+    flex-direction: column;
+    justify-content: top;
+    align-items: center;
+    width: 25vw;
+    height: 90vh;
+    border-radius: 16px 16px 0 0;
+    box-shadow: 2px 11px 5px -5px rgba(153,147,153,0.67);
+}
+
+.fondo {
+    border-radius: 20px 20px 0 0;
+    background-image: url(../img/fondo-batman.png);
+    background-size: cover;
+    background-position: bottom center;
+    width: 25vw;
+    /* view width */
+    height: 30vh;
+    /* view height */
+}
+
+.fondo-quinn {
+    background-image: url(../img/fondo-harley.png);
+}
+
+.fondo .corazon {
+    width: 10%;
+    margin-top: 1rem;
     margin-left: 1rem;
 }
 
-nav{
-    background-color: #001D2D;
-    display: flex;
-    justify-content: flex-end;
-    padding: 1rem 0;
-}
-
-nav ul{
-    list-style: none;
-    color: white;
-    display: flex;
-    align-items: center;
-}
-
-nav ul li{
-    margin: 0 1rem;
-}
-
-.contenido{
-    padding: 2rem 2rem;
+.perfil {
     display: flex;
     justify-content: center;
     align-items: center;
+    margin-top: -4rem;
+    margin-bottom: 1rem;
 }
 
-.formulario{
-    width: 50vw;
-    background-color:#00669F;
-    color: white;
-    padding: 20px 2rem;
-    border-radius: 50px;
-    display: flex;
-    justify-content: center;
-    align-items: center;
+.perfil img {
+    width: 100%;
+    border-radius: 100px;
+    object-fit: cover;
+    object-position: center;
 }
 
-.line{
-    display: flex;
-}
-
-.inputs{
-    background-color: red;
+.content {
+    color: #333333;
+    padding: 0 2rem;
+    height: auto;
+    text-align: center;
     display: flex;
     flex-direction: column;
-    flex-wrap: wrap;
-    width: 50vw;
+    justify-content: space-around;
+}
+
+.content h1 {
+    margin-bottom: 1rem;
+    font-weight: 400;
+    color: #000000;
+}
+
+.content p {
+    margin-bottom: 1rem;
+    text-align: left;
+}
+
+.card button {
+    margin: 1rem 1rem;
+    padding: 1rem 2.5rem;
+    background-color: #00669F;
+    border: none;
+    color: white;
+    font-size: 15px;
+    font-weight: 300;
+}
+
+.container-cards .add{
+    background-color: #00669F;
+    border-radius: 100px;
+    padding: 1rem 1.3rem;
+    font-size: 30px;
+    color: white;
+    border: none;
+}
+
+.container-cards .add:hover{
+    background-color: #001D2D;
+    animation: shadow-drop-2-center 0.4s cubic-bezier(0.250, 0.460, 0.450, 0.940) both;
+}
+
+@keyframes shadow-drop-2-center {
+    0% {
+      transform: translateZ(0);
+      box-shadow: 0 0 0 0 rgba(0, 0, 0, 0);
+    }
+    100% {
+      transform: translateZ(50px);
+      box-shadow: 0 0 10px 10px rgba(0, 0, 0, 0.35);
+    }
+}
+
+@media only screen and (min-device-width : 320px) and (max-device-width : 480px) {
+    .card{
+        width: 80vw;
+        height: 98vh;
+        margin: 1rem 0;
+    }
+
+    .fondo {
+        width: 80vw;
+    }
+    
+    .perfil {
+        margin-bottom: 1.5rem;
+    }
+
+    .container-cards .add{
+        margin-top: 2rem;
+    }
+
+}
+
+@media (min-width: 481px) and (max-width: 600px) {
+    .card{
+        width: 80vw;
+        height: 98vh;
+        margin: 1rem 0;
+    }
+
+    .fondo {
+        width: 80vw;
+    }
+    
+    .perfil {
+        margin-bottom: 1.5rem;
+    }
+
+    .container-cards .add{
+        margin-top: 2rem;
+    }
+}
+
+@media (min-width: 601px) and (max-width: 767px) {
+    .card{
+        width: 40vw;
+        height: 98vh;
+        margin: 1rem 0;
+    }
+
+    .fondo {
+        width: 40vw;
+    }
+
+    .quinn h1{
+        font-size: 30px;
+    }
+    
+    .perfil {
+        margin-bottom: 1.5rem;
+    }
+
+    .container-cards .add{
+        margin-top: 2rem;
+    }
+}
+
+@media only screen and (min-device-width : 768px) and (max-device-width : 1024px) {
+    .card{
+        width: 40vw;
+        height: 98vh;
+        margin: 1rem 0;
+    }
+
+    .fondo {
+        width: 40vw;
+    }
 }
